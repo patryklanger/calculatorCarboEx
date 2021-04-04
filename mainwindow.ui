@@ -1,0 +1,1325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Kalkulator WW i WBT</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>90</y>
+      <width>1200</width>
+      <height>710</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="mainPage"/>
+    <widget class="QWidget" name="yourMeals">
+     <widget class="QPushButton" name="addMealBut">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>560</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Dodaj posiłek</string>
+      </property>
+     </widget>
+     <widget class="MealsTable" name="dishesTable">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>10</y>
+        <width>1000</width>
+        <height>500</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="rowCount">
+       <number>0</number>
+      </property>
+      <property name="columnCount">
+       <number>0</number>
+      </property>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="yourProducts">
+     <widget class="QPushButton" name="addProductBut">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>560</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Dodaj produkt</string>
+      </property>
+     </widget>
+     <widget class="ProductsTable" name="productsTable">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>10</y>
+        <width>1000</width>
+        <height>500</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="rowCount">
+       <number>0</number>
+      </property>
+      <property name="columnCount">
+       <number>0</number>
+      </property>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>560</y>
+        <width>140</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Usun zaznaczone</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="addProductPage">
+     <widget class="QLabel" name="fatLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>178</y>
+        <width>60</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tłuszcz:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="productName_2">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>100</y>
+        <width>251</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="fiberLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>258</y>
+        <width>60</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Błonnik:</string>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="protein_2">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>220</y>
+        <width>62</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <double>1000.000000000000000</double>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="fat_2">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>180</y>
+        <width>62</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <double>1000.000000000000000</double>
+      </property>
+     </widget>
+     <widget class="QLabel" name="carboLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>229</x>
+        <y>140</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Weglowodany:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="proteinLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>218</y>
+        <width>60</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Białko:</string>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="fiber_2">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>260</y>
+        <width>62</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <double>1000.000000000000000</double>
+      </property>
+     </widget>
+     <widget class="QLabel" name="productNameLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>219</x>
+        <y>100</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nazwa produktu:</string>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="carbo_2">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>140</y>
+        <width>62</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <double>1000.000000000000000</double>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_7">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>330</y>
+        <width>113</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Dodaj produkt</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="yourDishes">
+     <widget class="DishesTable" name="dishesTable_2">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>10</y>
+        <width>1000</width>
+        <height>500</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="rowCount">
+       <number>10</number>
+      </property>
+      <property name="columnCount">
+       <number>5</number>
+      </property>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+     </widget>
+     <widget class="QPushButton" name="addMealBut_2">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>550</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Dodaj posiłek</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_9">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>550</y>
+        <width>131</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Usuń zaznaczone</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="dishIngPage">
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>10</y>
+        <width>113</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Wróć</string>
+      </property>
+     </widget>
+     <widget class="ProductsTable" name="dishIngTable">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>70</y>
+        <width>1000</width>
+        <height>500</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="rowCount">
+       <number>10</number>
+      </property>
+      <property name="columnCount">
+       <number>5</number>
+      </property>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+     </widget>
+     <widget class="QLabel" name="dishNameLabel">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>10</y>
+        <width>881</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Składniki dania:</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="mealIngPage">
+     <widget class="QLabel" name="mealDateLabel">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>10</y>
+        <width>881</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Posiłek z dnia: </string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="backButton">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>10</y>
+        <width>113</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Wróć</string>
+      </property>
+     </widget>
+     <widget class="ProductsTable" name="mealIngTable">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>60</y>
+        <width>1000</width>
+        <height>500</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="rowCount">
+       <number>10</number>
+      </property>
+      <property name="columnCount">
+       <number>5</number>
+      </property>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="dishNameSet">
+     <widget class="QLabel" name="dishNameLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>165</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nazwa dania:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="dishNameInput">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>165</y>
+        <width>231</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="dishSet1Next">
+      <property name="geometry">
+       <rect>
+        <x>720</x>
+        <y>160</y>
+        <width>81</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Dalej</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="addDishProdTabPage">
+     <widget class="QPushButton" name="addProductBut_2">
+      <property name="geometry">
+       <rect>
+        <x>980</x>
+        <y>500</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Dodaj produkt</string>
+      </property>
+     </widget>
+     <widget class="ProductsTable" name="newDishProdTable">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>0</y>
+        <width>1000</width>
+        <height>500</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="rowCount">
+       <number>0</number>
+      </property>
+      <property name="columnCount">
+       <number>0</number>
+      </property>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="geometry">
+       <rect>
+        <x>672</x>
+        <y>550</y>
+        <width>71</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Anuluj</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="geometry">
+       <rect>
+        <x>472</x>
+        <y>550</y>
+        <width>71</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Wstecz</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_6">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>550</y>
+        <width>113</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Dodaj danie</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="addDishaddProd">
+     <widget class="QLabel" name="carboLabel_3">
+      <property name="geometry">
+       <rect>
+        <x>289</x>
+        <y>202</y>
+        <width>101</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Weglowodany:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="fiberLabel_3">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>320</y>
+        <width>60</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Błonnik:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="productName_3">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>162</y>
+        <width>251</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="fatLabel_3">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>240</y>
+        <width>60</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tłuszcz:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="productNameLabel_3">
+      <property name="geometry">
+       <rect>
+        <x>279</x>
+        <y>162</y>
+        <width>111</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Nazwa produktu:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="proteinLabel_3">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>280</y>
+        <width>60</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Białko:</string>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="protein_3">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>282</y>
+        <width>62</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <double>1000.000000000000000</double>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="carbo_3">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>202</y>
+        <width>62</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <double>1000.000000000000000</double>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="fiber_3">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>322</y>
+        <width>62</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <double>1000.000000000000000</double>
+      </property>
+     </widget>
+     <widget class="QDoubleSpinBox" name="fat_3">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>242</y>
+        <width>62</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="maximum">
+       <double>1000.000000000000000</double>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_8">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>392</y>
+        <width>113</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Dodaj produkt</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>30</y>
+        <width>113</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Wróć</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="addingMealPage">
+     <widget class="SimpleTable" name="mealAddedProdTab">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>100</y>
+        <width>261</width>
+        <height>391</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="SimpleTable" name="mealAddedDishTab">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>100</y>
+        <width>261</width>
+        <height>391</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>199</x>
+        <y>56</y>
+        <width>241</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Dodane produkty:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>60</y>
+        <width>241</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Dodane dania:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="addMealButton">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>580</y>
+        <width>113</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Dodaj posiłek</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="mealAddProdBut">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>500</y>
+        <width>113</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Dodaj produkt</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="mealAddDishButton">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>500</y>
+        <width>113</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Dodaj danie</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>10</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>SUMA WW:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="sumaWW">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>10</y>
+        <width>60</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>10</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>SUMA WBT:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="sumaWBT">
+      <property name="geometry">
+       <rect>
+        <x>690</x>
+        <y>10</y>
+        <width>60</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="mealAddProductPage">
+     <widget class="QPushButton" name="addProductBut_3">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>550</y>
+        <width>140</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Dodaj ten produkt</string>
+      </property>
+     </widget>
+     <widget class="ProductsTable" name="mealAddProdTab">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>0</y>
+        <width>1000</width>
+        <height>500</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="rowCount">
+       <number>0</number>
+      </property>
+      <property name="columnCount">
+       <number>0</number>
+      </property>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="pushButton_10">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>550</y>
+        <width>113</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Wstecz</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="mealAddDishPage">
+     <widget class="QPushButton" name="mealAddDishBut">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>540</y>
+        <width>120</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Dodaj posiłek</string>
+      </property>
+     </widget>
+     <widget class="DishesTable" name="mealAddDishTab">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>0</y>
+        <width>1000</width>
+        <height>500</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="rowCount">
+       <number>10</number>
+      </property>
+      <property name="columnCount">
+       <number>5</number>
+      </property>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <row/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+      <column/>
+     </widget>
+     <widget class="QPushButton" name="pushButton_11">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>540</y>
+        <width>113</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Wróć</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="yourDishesBut">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>30</y>
+      <width>120</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Twoje dania</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="yourMealsBut">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>30</y>
+      <width>120</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Twoje posiłki</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="yourProductsBut">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>30</y>
+      <width>120</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Twoje produkty</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ProductsTable</class>
+   <extends>QTableWidget</extends>
+   <header>tables/headers/ProductsTable.h</header>
+  </customwidget>
+  <customwidget>
+   <class>DishesTable</class>
+   <extends>QTableWidget</extends>
+   <header>tables/headers/DishesTable.h</header>
+  </customwidget>
+  <customwidget>
+   <class>MealsTable</class>
+   <extends>QTableWidget</extends>
+   <header>tables/headers/MealsTable.h</header>
+  </customwidget>
+  <customwidget>
+   <class>SimpleTable</class>
+   <extends>QTableWidget</extends>
+   <header>tables/headers/SimpleTable.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
